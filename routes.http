@@ -1,0 +1,13 @@
+POST http://localhost:3333/items
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "title": "video 1",
+    "description": "videozada",
+    "duration": 120
+}
+
+###
+
+GET http://localhost:3333/items
