@@ -10,7 +10,7 @@ export const sql = postgres({
   username: PGUSER,
   password: PGPASSWORD,
   port: 5432,
-  ssl: 'require',
+  ssl: { rejectUnauthorized: false }, // Se estiver usando um serviço como Render
   connection: {
     options: `project=${ENDPOINT_ID}`,
   },
